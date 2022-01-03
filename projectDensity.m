@@ -1,0 +1,3 @@
+function xhat = projectDensity(xbar, beta, eta)
+xhat = (tanh(beta * eta) + tanh(beta * (xbar - eta))) / ...
+    (tanh(beta * eta) + tanh(beta * (1 - eta)));

@@ -1,0 +1,3 @@
+function dxdx = deprojectDensity(xbar, beta, eta)
+dxdx = (beta * (tanh(beta * (xbar - eta)).^2 - 1)) / ...
+    (tanh(beta * (eta - 1)) - tanh(eta * beta));
